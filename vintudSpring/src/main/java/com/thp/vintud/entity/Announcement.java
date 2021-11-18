@@ -2,7 +2,7 @@ package com.thp.vintud.entity;
 
 
 
-import java.io.Serializable;
+import java.io.Serializable; 
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -257,6 +257,16 @@ public class Announcement  implements Serializable {
 
 	public void setLocalisation(String localisation) {
 		this.localisation = localisation;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Announcement [id=" + id + ", title=" + title + ", description=" + description + ", price=" + price
+				+ ", picture=" + picture + ", publication_date=" + publication_date + ", is_available=" + is_available
+				+ ", view_number=" + view_number + ", localisation=" + localisation + ", userAnnouncement="
+				+ userAnnouncement + ", categoryAnnonce=" + categoryAnnonce + "]";
 	}
 
 
